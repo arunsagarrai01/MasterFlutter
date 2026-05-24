@@ -23,14 +23,33 @@ class NewApp extends StatelessWidget {
           leading: CircleAvatar(child: Text("A")),
         ),
       body: Column(children: [
+        Container(
+      width: 300,
+          height: 300,
+          margin: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20.0),
+            color: Colors.red
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+          child: Image.asset("./Image/LordShiva.jpg"),))
+      ]),
+      /*body: Column(children: [
         Text("My name is Arun Sagar Rai"),
         CircleAvatar(child: Text("A")),
         Container(
+          margin: EdgeInsets.all(20),
+          padding: EdgeInsets.all(20),
           width: 300,
           height: 300,
-          color: Colors.pink,
+          decoration: BoxDecoration(
+            color: Colors.pink,
+            borderRadius: BorderRadius.circular(20.0)
+          ),
+          child: Text("Arun", style: TextStyle(fontSize: 20),),
         )// Container
-      ],)
+      ],)*/
       /*body: Center(child: Text(
         "Arun Sagar Rai",
         style: TextStyle(
